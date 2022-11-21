@@ -24,21 +24,21 @@ class Test_Get_Hot_Product_Sort:
         res = Post_Request().post_request(inBody,url)
 
         #日志引入
-        # log.info("-------接口请求开始-----------")
-        # log.info("接口名称：getHotProductSort")
-        # log.info("请求方式：post")
-        # # log.info("用名称为：{}".format(expData['detail']))
-        # log.info(f"请求路径：'{HOST}/cockpit-web/product/getHotProductSort'")
-        # log.info("请求参数为：{}".format(inBody))
-        # log.info("响应结果为：{}".format(res))
-        # log.info("响应期望为：{}".format(expData))
-        # log.info("-------接口请求结束----------")
+        log.info("-------接口请求开始-----------")
+        log.info("接口名称：getHotProductSort")
+        log.info("请求方式：post")
+        # log.info("用名称为：{}".format(expData['detail']))
+        log.info(f"请求路径：'{HOST}/cockpit-web/product/getHotProductSort'")
+        log.info("请求参数为：{}".format(inBody))
+        log.info("响应结果为：{}".format(res))
+        log.info("响应期望为：{}".format(expData))
+        log.info("-------接口请求结束----------")
         # print()
 
         #断言判断
         assert res['code'] == expData['code']
         assert res['msg'] == expData['msg']
-        assert res['data']['total']>=0
+        # assert res['data']['total']>=0
 
         """
         F 表示用例失败
