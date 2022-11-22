@@ -22,7 +22,7 @@ class Test_Get_Hot_Product_Sort:
         url = f'{HOST}/cockpit-web/product/getHotProductSort'
 
         #执行请求
-        res = Request_Type().request_type(method,inBody,url)
+        res = Request_Type().request_type(method,url,json=inBody)
 
         #日志引入
         log.info("-------接口请求开始-----------")
@@ -49,4 +49,4 @@ class Test_Get_Hot_Product_Sort:
         """
 if __name__ == '__main__':
     pytest.main(['--clean-alluredir',"test_get_hot_product_sort.py","-s",'--alluredir','../report/tmp'])#   -s打印输出
-    os.system("allure serve ../report/tmp")
+    # os.system("allure serve ../report/tmp")

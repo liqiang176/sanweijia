@@ -1,0 +1,60 @@
+- method: POST
+  url: /workbench-material-web/material/listByPage
+- data:
+    current: 1
+    authorityDepts: []
+    authorityStatus: ""
+    likeMaterialName: ""
+    isDelete: 0
+    moduleName: 成品类模型
+    materialId: 181557282
+    modelFlag: 1
+    organType: 0
+  detail: 素材管理-查询存在的素材编号
+  resp:
+    code: 0
+    msg: 操作成功
+- data:
+    current: 1
+    authorityDepts: []
+    authorityStatus: ""
+    likeMaterialName: 左内墙面2
+    isDelete: 0
+    moduleName: 成品类模型
+    materialId: ""
+    modelFlag: 1
+    organType: 0
+  detail: 素材管理-查询存在的素材名称
+  resp:
+    code: 0
+    msg: 操作成功
+- data:
+    current: 1
+    authorityDepts: []
+    authorityStatus: ""
+    likeMaterialName: ""
+    isDelete: 0
+    moduleName: 成品类模型
+    materialId: ""
+    modelFlag: 1
+    name: mnkk三维家管理员
+    organType: 0
+  detail: 素材管理-查询存在的用户名称
+  resp:
+    code: 0
+    msg: 操作成功
+- data:
+    current: 1
+    authorityDepts: []
+    authorityStatus: ""
+    likeMaterialName: ""
+    isDelete: 0
+    moduleName: 成品类模型
+    materialId: ""
+    modelFlag: 1
+    username: mnkkadmin
+    organType: 0
+  detail: 素材管理-查询存在的用户账号
+  resp:
+    code: 0
+    msg: 操作成功

@@ -19,7 +19,7 @@ data = {
 'clientId': False,
 'appId': 'svj-work-main-pc'
 }
-resp = requests.post(url=url,data=data,headers=headers)
+resp = requests.post()
 Token = resp.headers.get("set-cookie")
 print(Token)
 print(resp.text)
